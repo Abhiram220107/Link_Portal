@@ -42,12 +42,12 @@ export const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Official Code F1 Logo Badge - Compact Sizing */}
-      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl overflow-hidden shadow-lg shadow-[#FF5722]/20 border border-[#FF5722]/50 mb-2.5 mx-auto transition-transform hover:scale-105 flex items-center justify-center bg-black/60">
+      {/* Official Code F1 Logo Badge - Clean White Card (Matches Competition Platform) */}
+      <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-white p-1.5 shadow-lg shadow-[#FF5722]/20 border border-[#FF5722]/50 mb-3 mx-auto transition-transform hover:scale-105 flex items-center justify-center overflow-hidden">
         <img
           src="/logos/code-f1-logo.png"
           alt="Code F1 Official Logo"
-          className="w-full h-full object-contain p-0.5"
+          className="w-full h-full object-contain"
         />
       </div>
 
