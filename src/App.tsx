@@ -6,15 +6,15 @@ import { LINKS } from './config/links';
 
 export const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#0B0E14] bg-racing-grid flex flex-col justify-between selection:bg-[#FF5722] selection:text-white">
+    <div className="h-screen h-[100dvh] w-full bg-[#0B0E14] bg-racing-grid flex flex-col justify-between overflow-hidden selection:bg-[#FF5722] selection:text-white">
       {/* Top F1 Racing Speed Accent Bar */}
-      <div className="w-full h-1 speed-stripes"></div>
+      <div className="w-full h-1 speed-stripes shrink-0"></div>
 
-      {/* Main Content Area */}
-      <div className="w-full max-w-md mx-auto px-4 flex-1 flex flex-col items-center">
+      {/* Main Content Area - Vertically balanced in viewport */}
+      <div className="w-full max-w-md mx-auto px-4 flex-1 flex flex-col justify-between py-1 sm:py-3 min-h-0">
         <Header />
 
-        <main className="w-full my-6 space-y-4">
+        <main className="w-full space-y-2.5 sm:space-y-3 my-auto">
           {/* Button 1: Participant Login */}
           <LinkButton
             label="Participant Login"
@@ -42,9 +42,9 @@ export const App: React.FC = () => {
             subtitle="Real-time scoreboard & standings"
           />
         </main>
-      </div>
 
-      <Footer />
+        <Footer />
+      </div>
     </div>
   );
 };
