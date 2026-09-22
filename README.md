@@ -22,9 +22,9 @@ When your Cloudflare Tunnel restarts and issues a new URL:
    // ==================================================
 
    export const LINKS = {
-     login: "https://your-new-tunnel.trycloudflare.com/login",
      coding: "https://your-new-tunnel.trycloudflare.com/contest",
-     leaderboard: "https://your-new-tunnel.trycloudflare.com/leaderboard"
+     attendance: "https://forms.gle/your-attendance-form",
+     rules: "https://your-domain.com/rules"
    };
    ```
 

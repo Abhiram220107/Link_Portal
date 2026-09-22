@@ -15,31 +15,31 @@ export const App: React.FC = () => {
         <Header />
 
         <main className="w-full space-y-2.5 sm:space-y-3 my-auto">
-          {/* Button 1: Participant Login */}
+          {/* 1st Link: Code F1 Coding Platform */}
           <LinkButton
-            label="Participant Login"
-            icon="🔐"
-            url={LINKS.login}
-            badge="Authentication"
-            subtitle="Access participant dashboard & credentials"
-          />
-
-          {/* Button 2: Coding Platform */}
-          <LinkButton
-            label="Coding Platform"
+            label="Code F1 Coding"
             icon="💻"
             url={LINKS.coding}
-            badge="Contest Workspace"
-            subtitle="Problem statements, editor & submissions"
+            badge="Platform"
+            subtitle="Launch contest editor & submit solutions"
           />
 
-          {/* Button 3: Live Leaderboard */}
+          {/* 2nd Link: Participant Attendance */}
           <LinkButton
-            label="Live Leaderboard"
-            icon="🏆"
-            url={LINKS.leaderboard}
-            badge="Live Standings"
-            subtitle="Real-time scoreboard & standings"
+            label="Participant Attendance"
+            icon="📋"
+            url={LINKS.attendance}
+            badge="Check-in"
+            subtitle="Mark your contest attendance"
+          />
+
+          {/* 3rd Link: Rules & Regulations */}
+          <LinkButton
+            label="Rules & Regulations"
+            icon="📜"
+            url={LINKS.rules}
+            badge="Guidelines"
+            subtitle="Contest scoring, rules & integrity policy"
           />
         </main>
 

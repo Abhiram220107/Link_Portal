@@ -1,7 +1,7 @@
 export interface EventLinks {
-  login: string;
   coding: string;
-  leaderboard: string;
+  attendance: string;
+  rules: string;
 }
 
 export declare const LINKS: EventLinks;
