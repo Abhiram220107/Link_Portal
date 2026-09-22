@@ -3,54 +3,59 @@ import React from 'react';
 export const Header: React.FC = () => {
   return (
     <header className="w-full pt-8 pb-4 px-4 flex flex-col items-center text-center">
-      {/* Logos Row - Easy to replace in /public/logos/ */}
-      <div className="flex items-center justify-center gap-3 sm:gap-4 mb-6 flex-wrap">
-        {/* IEEE SMC Logo */}
-        <div className="h-10 px-2 rounded-lg bg-neutral-900/90 border border-neutral-800 flex items-center justify-center hover:border-[#FF5722]/50 transition-colors shadow-sm">
+      {/* Top Organization Logos Row */}
+      <div className="flex items-center justify-center gap-3 sm:gap-5 mb-6 flex-wrap">
+        {/* IEEE SMC KARE SBC Logo */}
+        <div className="h-11 px-2.5 py-1 rounded-xl bg-white shadow-md shadow-black/40 border border-neutral-700/30 flex items-center justify-center hover:scale-105 transition-transform">
           <img
-            src="/logos/ieee-smc.svg"
-            alt="IEEE SMC KARE"
-            className="h-7 w-auto object-contain"
+            src="/logos/smc_sbc_logo.jpg"
+            alt="IEEE SMC KARE SBC"
+            className="h-8 w-auto max-w-[90px] object-contain"
             onError={(e) => {
-              // Fallback text badge if image is missing
-              (e.target as HTMLElement).style.display = 'none';
+              (e.currentTarget as HTMLImageElement).src = '/logos/ieee-smc.svg';
             }}
           />
-          <span className="text-xs font-bold text-neutral-300 px-2">IEEE SMC</span>
         </div>
 
         {/* KARE University Logo */}
-        <div className="h-10 px-2 rounded-lg bg-neutral-900/90 border border-neutral-800 flex items-center justify-center hover:border-[#FF5722]/50 transition-colors shadow-sm">
+        <div className="h-11 px-2.5 py-1 rounded-xl bg-white shadow-md shadow-black/40 border border-neutral-700/30 flex items-center justify-center hover:scale-105 transition-transform">
           <img
-            src="/logos/kare.svg"
-            alt="KARE"
-            className="h-7 w-auto object-contain"
+            src="/logos/kare_logo.jpeg"
+            alt="KARE University"
+            className="h-8 w-auto max-w-[90px] object-contain"
             onError={(e) => {
-              (e.target as HTMLElement).style.display = 'none';
+              (e.currentTarget as HTMLImageElement).src = '/logos/kare.svg';
             }}
           />
-          <span className="text-xs font-bold text-neutral-300 px-2">KARE</span>
         </div>
 
         {/* SCRS Logo */}
-        <div className="h-10 px-2 rounded-lg bg-neutral-900/90 border border-neutral-800 flex items-center justify-center hover:border-[#FF5722]/50 transition-colors shadow-sm">
+        <div className="h-11 px-2.5 py-1 rounded-xl bg-white shadow-md shadow-black/40 border border-neutral-700/30 flex items-center justify-center hover:scale-105 transition-transform">
           <img
-            src="/logos/scrs.svg"
+            src="/logos/scrs_logo.jpg"
             alt="SCRS KARE"
-            className="h-7 w-auto object-contain"
+            className="h-8 w-auto max-w-[90px] object-contain"
             onError={(e) => {
-              (e.target as HTMLElement).style.display = 'none';
+              (e.currentTarget as HTMLImageElement).src = '/logos/scrs.svg';
             }}
           />
-          <span className="text-xs font-bold text-neutral-300 px-2">SCRS</span>
         </div>
       </div>
 
+      {/* Official Code F1 Logo Badge from Code_Competition */}
+      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shadow-xl shadow-[#FF5722]/20 border-2 border-[#FF5722]/50 mb-3 mx-auto transition-transform hover:scale-105 flex items-center justify-center bg-black/60">
+        <img
+          src="/logos/code-f1-logo.png"
+          alt="Code F1 Official Logo"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
       {/* F1 Speed Accent Line */}
-      <div className="w-20 h-1 rounded-full speed-stripes mb-5 opacity-90"></div>
+      <div className="w-20 h-1 rounded-full speed-stripes mb-4 opacity-90"></div>
 
       {/* Main Title */}
-      <div className="inline-flex items-center gap-2 mb-1.5">
+      <div className="inline-flex items-center gap-2 mb-1">
         <span className="inline-block w-2.5 h-2.5 rounded-full bg-[#FF5722] animate-pulse"></span>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white font-racing uppercase">
           IEEE CODE <span className="text-[#FF5722]">F1</span>
@@ -58,7 +63,7 @@ export const Header: React.FC = () => {
       </div>
 
       {/* Subtitle */}
-      <p className="text-sm sm:text-base font-bold tracking-[0.2em] text-[#FF7043] uppercase mb-1.5">
+      <p className="text-xs sm:text-sm font-bold tracking-[0.25em] text-[#FF7043] uppercase mb-1.5 font-mono">
         PARTICIPANT PORTAL
       </p>
 
