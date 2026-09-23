@@ -11,10 +11,10 @@
 
 export const LINKS = {
   // 💻 1. Code F1 Coding Platform
-  coding: "https://example.trycloudflare.com/contest",
+  coding: "https://signing-alexander-move-joyce.trycloudflare.com/login",
 
   // 📋 2. Participant Attendance
-  attendance: "https://forms.gle/example-attendance",
+  attendance: "https://attenza-by-abhiram.vercel.app",
 
   // 📜 3. Rules & Regulations
   rules: "https://example.com/rules-and-regulations"
