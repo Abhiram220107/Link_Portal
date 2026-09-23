@@ -17,7 +17,7 @@ export const LINKS = {
   attendance: "https://attenza-by-abhiram.vercel.app",
 
   // 📜 3. Rules & Regulations
-  rules: "https://example.com/rules-and-regulations"
+  rules: "https://docs.google.com/document/d/1mSb8yvkf3DDihuJcab3y_bVZTXRcpUZpcn7MM5UQvNY/edit?usp=drive_link"
 };
 
 export default LINKS;
