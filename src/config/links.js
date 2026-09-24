@@ -17,7 +17,7 @@ export const LINKS = {
   attendance: "https://attenza-by-abhiram.vercel.app",
 
   // 📜 3. Rules & Regulations
-  rules: "https://drive.google.com/file/d/1wHtMllFHqQeoHxDBwST2cU9Dtc6bs1vx/view?usp=sharing"
+  rules: "https://drive.google.com/file/d/19cOC8sJaRj_noEOvtIp6A65TBsbj-hYJ/view?usp=sharing"
 };
 
 export default LINKS;
