@@ -11,7 +11,7 @@
 
 export const LINKS = {
   // 💻 1. Code F1 Coding Platform
-  coding: "https://meetings-snowboard-arms-astrology.trycloudflare.com/",
+  coding: "https://involved-examines-simple-spokesman.trycloudflare.com/",
 
   // 📋 2. Participant Attendance
   attendance: "https://attenza-by-abhiram.vercel.app",
